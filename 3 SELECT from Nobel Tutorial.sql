@@ -1,5 +1,11 @@
-#### SELECT from Nobel Tutorial
-#### [Exercise Link](http://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial)
+/*
+SELECT from Nobel Tutorial
+[Exercise Link](http://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial)
+/*
+
+/*
+Table
+/*
 
 nobel
 ----------------------------
