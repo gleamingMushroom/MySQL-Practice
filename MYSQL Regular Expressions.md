@@ -2,7 +2,23 @@
 
 > Syntax: expr REGEXP pat
 
+  
+  
+Pattern	| What the pattern matches
+------------ | -------------
+^	| Beginning of string
+$	| End of string
+.	| Any single character
+[...]	| Any character listed between the square brackets
+[^...]	| Any character not listed between the square brackets
+p1|p2|p3	| Alternation; matches any of the patterns p1, p2, or p3
+*	| Zero or more instances of preceding element
++	| One or more instances of preceding element
+{n}	n | instances of preceding element
+{m,n}	| m through n instances of preceding element
 
+  
+  
 The following MySQL statement will find the author’s name __beginning with ‘w’__. The ‘^’ is used to match the beginning of the name.
 
 
@@ -66,3 +82,33 @@ The following statement will find the author’s name containing exactly 12 char
 SELECT * FROM author
 WHERE aut_name REGEXP '^.{12}$';
 ```
+
+
+Query to find all the names starting with 'st' −
+
+
+```
+SELECT name FROM person_tbl WHERE name REGEXP '^st';
+```
+
+Query to find all the names ending with 'ok' −
+
+
+```
+SELECT name FROM person_tbl WHERE name REGEXP 'ok$';
+```
+
+
+Query to find all the names, which contain 'mar' −
+
+```
+SELECT name FROM person_tbl WHERE name REGEXP 'mar';
+```
+
+Query to find all the names starting with a vowel and ending with 'ok' −
+
+```
+SELECT name FROM person_tbl WHERE name REGEXP '^[aeiou]|ok$';
+```
+
+
