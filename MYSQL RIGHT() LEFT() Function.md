@@ -4,7 +4,7 @@ MySQL RIGHT() Function
 
 __Example:__ 
 
-Extract 4 characters from a string (starting from right):
+Extract 5 characters from a string (starting from left), output __"SQL T"__:
 ```
-SELECT RIGHT("SQL Tutorial is cool", 4) AS ExtractString;
+SELECT LEFT("SQL Tutorial is cool", 5) AS ExtractString;
 ```
