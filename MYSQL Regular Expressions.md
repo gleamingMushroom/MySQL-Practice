@@ -12,8 +12,8 @@ $	| End of string
 [...]	| Any character listed between the square brackets
 [^...]	| Any character not listed between the square brackets
 p1\|p2\|p3	| Alternation; matches any of the patterns p1, p2, or p3
-*	| Zero or more instances of preceding element
-+	| One or more instances of preceding element
+\*	| Zero or more instances of preceding element
+\+	| One or more instances of preceding element
 {n}	n | instances of preceding element
 {m,n}	| m through n instances of preceding element
 
