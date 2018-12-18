@@ -46,17 +46,17 @@ Write a query identifying the type of each record in the TRIANGLES table using i
 
 * __Equilateral__: It's a triangle with  sides of equal length.
 * __Isosceles__: It's a triangle with  sides of equal length.
-* ____Scalene__: It's a triangle with  sides of differing lengths.
+* __Scalene__: It's a triangle with  sides of differing lengths.
 * __Not A Triangle__: The given values of A, B, and C don't form a triangle.
 
 ```sql
 select 
     case 
-    when A+B>=C and A+C>=B and B+C>=A then
+    when A + B >= C and A + C >= B and B + C >= A then
         case 
-        when A=B and B=C then "Equilateral" 
-        when A=B or A=C or B=C then "Isosceles"
-        when A<>B and B<>C and A<>C then "Scalene"
+        when A = B and B = C then "Equilateral" 
+        when A = B or A = C or B = C then "Isosceles"
+        when A <> B and B <> C and A <> C then "Scalene"
         end
     else "Not A Triangle"
     end 
@@ -66,9 +66,9 @@ from TRIANGLES;
 ```sql
 select 
     case 
-    when a + b < c or b + c < a or c + a < b then "Not A Triangle"
-    when a = b and b = c then "Equilateral"
-    when a = b or b = c or c = a then "Isosceles"
+    when A + B < C or B + C < A or C + A < B then "Not A Triangle"
+    when A = B and b = C then "Equilateral"
+    when A = B or B = C or C = A then "Isosceles"
     else "Scalene" 
     end
 from Triangles;  
