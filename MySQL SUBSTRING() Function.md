@@ -10,6 +10,9 @@ Query an alphabetically ordered list of all names in OCCUPATIONS, immediately fo
 ```sql
 SELECT concat(NAME,concat("(",substr(OCCUPATION,1,1),")")) 
 FROM OCCUPATIONS ORDER BY NAME ASC;
-```
+```  
+
+
+__Note:__ The _SUBSTR()_ and _MID()_ functions equals to the _SUBSTRING()_ function.
 
 
