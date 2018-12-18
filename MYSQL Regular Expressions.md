@@ -17,6 +17,13 @@ p1\|p2\|p3	| Alternation; matches any of the patterns p1, p2, or p3
 
 ### Examples:  
 
+Q: Query the list of __CITY__ names from __STATION__ which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+
+A: 
+```
+select distinct city from station where city regexp '^[aeiou].*[aeuio]$';
+```
+
 
   
 The following MySQL statement will find the author’s name __beginning with ‘w’__. The ‘^’ is used to match the beginning of the name.
