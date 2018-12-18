@@ -8,7 +8,8 @@ Query an alphabetically ordered list of all names in OCCUPATIONS, immediately fo
 
 * __Answer:__ 
 ```sql
-SELECT concat(NAME,concat("(",concat(substr(OCCUPATION,1,1),")"))) FROM OCCUPATIONS ORDER BY NAME ASC;
+SELECT concat(NAME,concat("(",substr(OCCUPATION,1,1),")")) 
+FROM OCCUPATIONS ORDER BY NAME ASC;
 ```
 
 
