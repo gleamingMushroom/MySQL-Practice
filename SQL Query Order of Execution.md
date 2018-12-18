@@ -40,10 +40,9 @@ But it can be solved using the having clause
 
 > GROUP BY  
 
-group by:
+Group by __X__ means put all those with the same value for __X__ in the same row.  
 
-Group by X means put all those with the same value for X in the same row.
-Group by X, Y put all those with the same values for both X and Y in the same row.  
+Group by __X, Y__ put all those with the same values for both __X__ and __Y__ in the same row.  
 
 > HAVING  
 
