@@ -18,6 +18,10 @@ p1\|p2\|p3	| Alternation; matches any of the patterns p1, p2, or p3
 {m,n}	| m through n instances of preceding element
 
   
+/n
+### Examples:
+/n
+
   
 The following MySQL statement will find the author’s name __beginning with ‘w’__. The ‘^’ is used to match the beginning of the name.
 
@@ -83,9 +87,7 @@ SELECT * FROM author
 WHERE aut_name REGEXP '^.{12}$';
 ```
 
-
 Query to find all the names starting with 'st' −
-
 
 ```
 SELECT name FROM person_tbl WHERE name REGEXP '^st';
@@ -93,11 +95,9 @@ SELECT name FROM person_tbl WHERE name REGEXP '^st';
 
 Query to find all the names ending with 'ok' −
 
-
 ```
 SELECT name FROM person_tbl WHERE name REGEXP 'ok$';
 ```
-
 
 Query to find all the names, which contain 'mar' −
 
@@ -110,5 +110,3 @@ Query to find all the names starting with a vowel and ending with 'ok' −
 ```
 SELECT name FROM person_tbl WHERE name REGEXP '^[aeiou]|ok$';
 ```
-
-
