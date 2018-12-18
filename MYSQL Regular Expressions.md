@@ -2,7 +2,7 @@
 
 > Syntax: expr REGEXP pat
 
-  
+<br>  
   
 Pattern	| What the pattern matches
 ------------ | -------------
@@ -18,9 +18,9 @@ p1\|p2\|p3	| Alternation; matches any of the patterns p1, p2, or p3
 {m,n}	| m through n instances of preceding element
 
   
-/n
+<br>
 ### Examples:
-/n
+<br>
 
   
 The following MySQL statement will find the author’s name __beginning with ‘w’__. The ‘^’ is used to match the beginning of the name.
