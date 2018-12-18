@@ -101,7 +101,7 @@ Query to find all the names, which contain 'mar' −
 SELECT name FROM person_tbl WHERE name REGEXP 'mar';
 ```
 
-Query to find all the names starting with a vowel and ending with 'ok' −
+Query to find all the names starting with a vowel or ending with 'ok' −
 
 ```
 SELECT name FROM person_tbl WHERE name REGEXP '^[aeiou]|ok$';
