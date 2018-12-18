@@ -37,3 +37,38 @@ ORDER BY
     ELSE City
 END);
 ```
+
+>Question
+(Type of Triangle)[https://www.hackerrank.com/challenges/what-type-of-triangle/problem]
+
+Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. Output one of the following statements for each record in the table:
+
+* __Equilateral__: It's a triangle with  sides of equal length.
+* __Isosceles__: It's a triangle with  sides of equal length.
+* ____Scalene__: It's a triangle with  sides of differing lengths.
+* __Not A Triangle__: The given values of A, B, and C don't form a triangle.
+
+```sql
+select 
+    case 
+    when A+B>=C and A+C>=B and B+C>=A then
+        case 
+        when A=B and B=C then "Equilateral" 
+        when A=B or A=C or B=C then "Isosceles"
+        when A<>B and B<>C and A<>C then "Scalene"
+        end
+    else "Not A Triangle"
+    end 
+from TRIANGLES;
+```  
+
+```sql
+select 
+    case 
+    when a + b < c or b + c < a or c + a < b then "Not A Triangle"
+    when a = b and b = c then "Equilateral"
+    when a = b or b = c or c = a then "Isosceles"
+    else "Scalene" 
+    end
+from Triangles;  
+```
