@@ -58,4 +58,4 @@ If you are using any window functions, they will be calculated immediately after
 The select statement is where you finally specify the values and aggregations remaining in the data set after the grouping and pruning have occurred. The execution will be almost complete at this point, with only orders and limits left to specify.  
 
 
-(SQL Query Order of Execution)[https://www.periscopedata.com/blog/sql-query-order-of-operations]
+[SQL Query Order of Execution](https://www.periscopedata.com/blog/sql-query-order-of-operations)
