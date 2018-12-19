@@ -30,3 +30,13 @@ SELECT ROUND(235.415, 2) AS RoundValue;
 # Return 236
 SELECT ROUND(235.5);
 ```
+
+Note: also see Truncate()
+
+
+> BETWEEN Operator  
+
+The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.  
+
+The BETWEEN operator is inclusive: __begin and end values are included.__
+
